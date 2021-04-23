@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Discord Rich Presence</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="neon.min.css">
+    <body>
+        <div class="container mt-4">
+            <br>
+            <div id="alert" class="mb-4"></div>
+            <div class="card mb-4">
+                <div style="display: none;color: red; text-align: center;" id="user-show"> Showing Rich Presence for ;-;</div>
+                <div class="card-body">
+                    <div class="form">
+                        <form class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="clientId">
+                                        Project Name
+                                    </label>
+                                    <input type="text" id="project-name" class="form-control">
+                                </div>       
+                                <div class="form-group">
+                                    <label for="details" >
+                                        Description of your project
+                                    </label>
+                                    <input type="text" id="details" class="form-control">
+                                </div>                       
+                              
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="timestamp">
+                                        Application
+                                    </label>
+                                    <select id="application" class="form-control">
+                                        <option>After Effects</option>
+                                        <option>Premier Pro</option>
+                                        <option>Photoshop</option>
+                                        <option>Illustrator</option>
+                                    </select>
+                                    <div class="form-group">
+                                        <br>
+                                        <label for="showTime">
+                                            Show time elapsed?
+                                        </label>
+                                        <select id="time_e" class="custom-select">
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                  
+                                </div>                                
+                                                                                    
+                            </div>   
+                        </form>
+                        <button id="initialize" onclick="rpc_inititalize()" disabled class="btn btn-secondary btn-block">Start</button>
+                        <button id="initialize" onclick="restart()" class="btn btn-warning btn-block">Restart RPC</button>
+
+                    </div>
+                </div>
+            </div>
+            <footer class="mb-4 text-center">
+                <p>
+                   Contributors: <br>
+                   <br>
+                   <a onclick="require('electron').shell.openExternal('https://github.com/yashraj-n')" href=".">Yashraj Narke</a>
+                </p>
+            </footer>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

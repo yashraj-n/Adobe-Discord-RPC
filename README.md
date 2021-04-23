@@ -2,7 +2,7 @@
 Simple Discord rpc for Adobe apps
 
 ## Installation
-Download the latest version from the [fsd](https://github.com/yashraj-n/Adobe-Discord-RPC/releases) and install it
+Download the latest version from [here](https://github.com/yashraj-n/Adobe-Discord-RPC/releases) and install it
 
 ## Usage
 Must have electron installed globally on your machine

@@ -1,13 +1,13 @@
 {
   "name": "adobe-rpc",
   "productName": "Adobe RPC",
-  "version": "1.0.0",
+  "version": "1.01",
   "description": "Discord rpc for Adobe apps",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make --icon ./icon.ico",
+    "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },

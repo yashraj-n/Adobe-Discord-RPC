@@ -17,10 +17,10 @@ const createWindow = () => {
       nodeIntegration: true,
       contextIsolation: false
     },
-    icon: path.join(__dirname, "logo.ico")
+    icon: path.join(__dirname, "Assets", "logo.ico")
   });
 
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  mainWindow.loadFile(path.join(__dirname, "Frontend", "index.html"));
 };
 
 app.on('ready', createWindow);

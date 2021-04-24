@@ -21,12 +21,21 @@ function restart() {
 }
 
 function rpc_inititalize() {
+    start_btn.classList.remove("btn-secondary");
+    start_btn.classList.add("btn-danger")
+    start_btn.innerText = "Stop";
+    start_btn.disabled = true;
 
     ipcRendrer.send("rpc-initialize", JSON.stringify({
         project: project.value,
         description: description.value,
         application: application.value,
         time: (timeElapsedShow.value === "Yes" ? true : false)
-    }))
+    }));
+
+    setTimeout(() => {
+        start_btn.disabled = false;
+        start_btn.onclick = restart;
+    }, 5000);
 }
 

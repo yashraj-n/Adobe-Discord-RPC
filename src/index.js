@@ -1,7 +1,10 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, autoUpdater } = require('electron');
 const path = require('path');
 const config = require("./config.json");
 const discord = require("discord-rpc");
+require('update-electron-app')({
+  repo:"yashraj-n/Adobe-Discord-RPC"
+});
 
 if (require('electron-squirrel-startup')) {
   app.quit();
@@ -36,8 +39,6 @@ app.on('activate', () => {
   }
 });
 
-
-const startTimestamp = new Date();
 
 ipcMain.on("rpc-initialize", (e, value) => {
   value = JSON.parse(value)

@@ -1,6 +1,75 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+#pre-bgr {
+  background-color: #6c82cf;
+  width: 250px;
+  height: 133px;
+  margin-left: 20%;
 }
+
+#pre-playing {
+  margin-top: -9%;
+  margin-left: 21%;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+#pre-app-logo {
+  position: absolute;
+  width: 59px;
+  height: 56px;
+  margin-top: -6%;
+  margin-left: 21%;
+  z-index: 0;
+}
+
+#pre-app-name {
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  width: 103px;
+  height: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 27%;
+  margin-top: 0.5%;
+}
+
+#pre-project {
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  width: 48px;
+  height: 9px;
+  margin-left: 27%;
+  margin-top: 1%;
+}
+
+#pre-details {
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  width: 34px;
+  height: 9px;
+  margin-left: 27%;
+  margin-top: 0.7%;
+}
+#pre-time {
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  width: 57px;
+  height: 10px;
+  margin-left: 27%;
+  margin-top: 1%;
+}
+
+#pre-creds {
+  margin-top: -14%;
+  margin-left: 20%;
+}
+

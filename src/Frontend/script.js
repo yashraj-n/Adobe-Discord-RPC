@@ -10,6 +10,8 @@ let pre_desc = document.getElementById("pre-details");
 let pre_app_logo = document.getElementById('pre-app-logo');
 let pre_creds = document.getElementById("pre-creds");
 let time_elapsed = document.getElementById('pre-time');
+let current_q = document.getElementById('cc-query');
+
 
 project.onchange = project_l;
 description.onchange = desc_l;
@@ -75,6 +77,7 @@ function restart() {
 }
 
 function rpc_inititalize() {
+    current_q.innerText = "Sending IPC Request";
     start_btn.classList.remove("btn-secondary");
     start_btn.classList.add("btn-danger")
     start_btn.innerText = "Stop";
@@ -92,4 +95,12 @@ function rpc_inititalize() {
         start_btn.onclick = restart;
     }, 5000);
 }
+
+ipcRendrer.on("rpc-show", (e, data) => {
+    current_q.innerHTML = `Showing Presence for <img src='${data.avatar}' style='border-radius: 50%'> ${data.username}`;
+    project.disabled = true;
+    application.disabled = true;
+    description.disabled = true;
+    timeElapsedShow.disabled = true;
+});
 

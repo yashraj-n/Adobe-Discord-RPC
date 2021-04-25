@@ -1,7 +1,7 @@
 {
   "name": "adobe-rpc",
   "productName": "Adobe RPC",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Discord rpc for Adobe apps",
   "main": "src/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "icon": "F:\\JavaScript\\adobe-rpc\\src\\logo.ico",
+        "icon": "F:\\JavaScript\\adobe-rpc\\src\\Assets\\logo.ico",
         "asar": true
       },
       "makers": [

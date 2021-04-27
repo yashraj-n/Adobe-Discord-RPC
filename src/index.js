@@ -2,6 +2,7 @@ const { app, BrowserWindow, ipcMain, autoUpdater } = require('electron');
 const path = require('path');
 const config = require("./config.json");
 const discord = require("discord-rpc");
+
 require('update-electron-app')({
   repo: "yashraj-n/Adobe-Discord-RPC"
 });
@@ -93,6 +94,7 @@ async function SetupDiscordRPC(project, description, image, id, time) {
   if (time) {
     try {
       client.on("ready", () => {
+        
         mainWindow.webContents.send("rpc-show", {
           avatar: `https://cdn.discordapp.com/avatars/${client.user.id}/${client.user.avatar}.png?size=16`,
           username: `${client.user.username}#${client.user.discriminator}`

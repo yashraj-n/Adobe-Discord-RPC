@@ -97,6 +97,7 @@ function rpc_inititalize() {
 }
 
 ipcRendrer.on("rpc-show", (e, data) => {
+    console.log(data.avatar)
     current_q.innerHTML = `Showing Presence for <img src='${data.avatar}' style='border-radius: 50%'> ${data.username}`;
     project.disabled = true;
     application.disabled = true;
